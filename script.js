@@ -34,12 +34,26 @@ window.onload = function () {
       if (seconds < 10) seconds = "0" + seconds;
         document.getElementById("id_clock").innerHTML = hours + ":" + minutes;
         setTimeout("digitalClock()", 1000);
-   }
+   };
 
    //*кнопки*/
-   butt.onclick = function() {
+   
+
+
+  /* butt.onclick = function() {
     var val = document.getElementById('elem1').value;
     document.getElementById('str').innerHTML=val;
     var val = document.getElementById('elem2').value;
         document.getElementById('str1').innerHTML=val;
+    };*/
+
+    button_first.onclick = function() {
+        var val = document.getElementById('input_first').value;
+        document.getElementById('line_first').innerHTML=val;
+    
+    };
+
+    button_second.onclick = function() {
+        var val = document.getElementById('input_second').value;
+        document.getElementById('line_second').innerHTML=val;
     };

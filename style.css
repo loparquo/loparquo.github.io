@@ -67,7 +67,7 @@
     flex-direction: column;
     margin: auto;
     width: 80%;
-    min-height: 350px;
+
     background-color: white;
     margin-top: -90px;
     border-radius: 15px;
@@ -101,8 +101,11 @@
 }
 .area{
     margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 25px;
     color: black;
+    font-weight: bold;
 }
 .state{
     margin-top: 10px;
@@ -115,6 +118,7 @@
 }
 .timer{
     margin-top: 12px;
+    margin-bottom: 12px;
     font-size: 30px;
     font-weight: bold;
     color: black;
@@ -197,10 +201,24 @@
     display: flex;
     margin: auto;
     margin-top: 200px;
+    height: 40px;
+    width: 80%;
+    border-radius: 10px;
+    border-color: aqua;
 }
-.butto{
+.input_two{
+    margin-top: 50px;
+}
+.button_one, .button_two{
     display: flex;
     margin: auto;
+    margin-top: 20px;
+    padding: auto;
+    padding: 20px;
+    color: whitesmoke;
     background-color: blue;
     margin-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 80%;
 }

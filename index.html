@@ -25,6 +25,7 @@
 <link rel="apple-touch-icon" href="android-icon-192x192.png">
 </head>
 <script src="script.js"></script>
+
 <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/service-worker.js');
@@ -51,16 +52,12 @@
 
 <section class="section_second">
     <div class="exit">Куда входите:</div>
-    <div id="str" class="area">Сюда Туда</div>
-    <script>
-        butt.onclick = function() {
-    var val = document.getElementById('elem1').value;
-    document.getElementById('str').innerHTML=val;}
-    </script>
+    <div id="line_first" class="area">Сюда Туда</div>
+    
           <wrapper class="wrapper_quadro">
                 <div class="box1" class="iin">БИН/ИИН</div>
                 <div class="box2" class="iin">Номер входа</div>
-                <div class="box3" class="numb">040840003406</div>
+                <div id="line_second" class="box3" class="numb">040840003406</div>
                 <div class="box4" class="numb">2</div>
           </wrapper>
 
@@ -75,17 +72,22 @@
                
           <span id="time" class="timer" >05:00</span>       
 </section>
-
+<script src="script.js"></script>
 <footer class="footer">
     <div class="footer_first">Время сканирования кода</div>
     <div class="watch" id="id_clock" ></div>
     <script>digitalClock();</script>
     <div class="footer_second">Покажите полученный результат соответствующему сотруднику объекта</div>
+    
 </footer>
 
-<input class="input_one" id="elem1" type="text" name="quantity">
-    <input class="butto" id="butt" type="button" value="сменить"><br><br>
-    <script src="script.js"></script>
+<script src="script.js"></script>
+<input class="input_one" id="input_first" type="text" name="quantity">
+<input class="button_one" id="button_first" type="button" value="сменить название"><br><br>
+<script src="script.js"></script>
+<input class="input_two" id="input_second" type="text" name="quantity">
+<input class="button_two" id="button_second" type="button" value="сменить бин/иин"><br><br>
+<script src="script.js"></script>
 <h1>hi</h1>
 </body>
 
