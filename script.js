@@ -57,3 +57,8 @@ window.onload = function () {
         var val = document.getElementById('input_second').value;
         document.getElementById('line_second').innerHTML=val;
     };
+
+    button_three.onclick = function() {
+        var val = document.getElementById('input_three').value;
+        document.getElementById('line_three').innerHTML=val;
+    };
