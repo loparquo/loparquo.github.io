@@ -38,27 +38,21 @@ window.onload = function () {
 
    //*кнопки*/
    
-
-
-  /* butt.onclick = function() {
-    var val = document.getElementById('elem1').value;
-    document.getElementById('str').innerHTML=val;
-    var val = document.getElementById('elem2').value;
-        document.getElementById('str1').innerHTML=val;
-    };*/
-
     button_first.onclick = function() {
         var val = document.getElementById('input_first').value;
         document.getElementById('line_first').innerHTML=val;
-    
+        //чистит
+        document.getElementById('input_first').value = '';
     };
 
     button_second.onclick = function() {
         var val = document.getElementById('input_second').value;
         document.getElementById('line_second').innerHTML=val;
+        document.getElementById('input_second').value = '';
     };
 
     button_three.onclick = function() {
         var val = document.getElementById('input_three').value;
         document.getElementById('line_three').innerHTML=val;
+        document.getElementById('input_three').value = '';
     };
